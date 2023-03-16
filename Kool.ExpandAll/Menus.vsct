@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <!--https://docs.microsoft.com/en-us/visualstudio/extensibility/image-service-and-catalog#how-do-i-use-image-monikers-in-a-vsct-file-->
+  <Include href="KnownImageIds.vsct" />
+
+  <CommandPlacements>
+    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD_ID" priority="0x0300">
+      <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJWIN_SCOPE" />
+    </CommandPlacement>
+    <!-- TODO: multiple selection -->
+  </CommandPlacements>
+
+  <Symbols>
+    <GuidSymbol name="PACKAGE" value="{A0B9BF48-32E7-412E-BF3D-47C46CA42821}">
+      <IDSymbol name="EXPAND_ALL_CMD_ID" value="0x0001" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

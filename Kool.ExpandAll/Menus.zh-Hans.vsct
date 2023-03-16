@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" language="zh-hans">
+
+  <Include href="Menus.vsct" />
+
+  <Commands package="PACKAGE">
+    <Buttons>
+      <Button guid="PACKAGE" id="EXPAND_ALL_CMD_ID">
+        <Icon guid="ImageCatalogGuid" id="ExpandAll" />
+        <CommandFlag>IconAndText</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>全部展开</ButtonText>
+          <CommandName>SolutionExplorer.ExpandAll</CommandName>
+          <LocCanonicalName>.SolutionExplorer.ExpandAll</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+</CommandTable>

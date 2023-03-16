@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Kool.ExpandAll.a0b9bf48-32e7-412e-bf3d-47c46ca42821" Version="0.0.0" Language="en-US" Publisher="Heku" />
+    <DisplayName>Expand All</DisplayName>
+    <Description xml:space="preserve">An open source Visual Studio extension to allow you expand selected hierarchy items in solution explorer.</Description>
+    <MoreInfo>https://github.com/heku/kool.expandall</MoreInfo>
+    <Icon>Resources\logo.png</Icon>
+    <Tags>kool;solution explorer;何苦;解决方案资源管理器;全部展开</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
