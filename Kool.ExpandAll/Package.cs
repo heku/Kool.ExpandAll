@@ -22,7 +22,7 @@ public sealed class Package : ToolkitPackage
         await this.RegisterCommandsAsync();
     }
 
-    [Command(Ids.EXPAND_ALL_CMD_ID)]
+    [Command(Ids.EXPAND_ALL_CMD)]
     public sealed class ExpandAllCommand : BaseCommand<ExpandAllCommand>
     {
         // https://github.com/VsixCommunity/Community.VisualStudio.Toolkit/blob/master/demo/VSSDK.TestExtension/Commands/ExpandSelectedItemsCommand.cs

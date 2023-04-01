@@ -5,7 +5,7 @@
 
   <Commands package="PACKAGE">
     <Buttons>
-      <Button guid="PACKAGE" id="EXPAND_ALL_CMD_ID">
+      <Button guid="PACKAGE" id="EXPAND_ALL_CMD">
         <Icon guid="ImageCatalogGuid" id="ExpandAll" />
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>

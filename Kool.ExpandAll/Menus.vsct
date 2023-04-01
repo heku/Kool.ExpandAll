@@ -7,16 +7,32 @@
   <!--https://docs.microsoft.com/en-us/visualstudio/extensibility/image-service-and-catalog#how-do-i-use-image-monikers-in-a-vsct-file-->
   <Include href="KnownImageIds.vsct" />
 
+  <Commands package="PACKAGE">
+    <Groups>
+      <Group guid="PACKAGE" id="GROUP" />
+    </Groups>
+  </Commands>
+
   <CommandPlacements>
-    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD_ID" priority="0x0300">
+    <!--Put the menu in same group with 'Scope to This'-->
+    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD" priority="0xFFF0">
       <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJWIN_SCOPE" />
     </CommandPlacement>
-    <!-- TODO: multiple selection -->
+    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD" priority="0x0000">
+      <Parent guid="PACKAGE" id="GROUP" />
+    </CommandPlacement>
+    <CommandPlacement guid="PACKAGE" id="GROUP" priority="0x017E">
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIPROJ" />
+    </CommandPlacement>
+    <CommandPlacement guid="PACKAGE" id="GROUP" priority="0x017E">
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_XPROJ_MULTIITEM" />
+    </CommandPlacement>
   </CommandPlacements>
 
   <Symbols>
     <GuidSymbol name="PACKAGE" value="{A0B9BF48-32E7-412E-BF3D-47C46CA42821}">
-      <IDSymbol name="EXPAND_ALL_CMD_ID" value="0x0001" />
+      <IDSymbol name="GROUP" value="0x0000" />
+      <IDSymbol name="EXPAND_ALL_CMD" value="0x0001" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>
