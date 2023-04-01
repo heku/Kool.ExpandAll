@@ -1,12 +1,14 @@
 trigger:
 - '*'
-- refs/tags/v*
+- refs/tags/v*.*
 
 variables:
-  versionPrefix: 0.1
+  versionPrefix: 1.0
+  ${{ if startsWith(variables['Build.SourceBranch'], 'refs/tags/v') }}:
+    tagVersion: ${{ replace(variables['Build.SourceBranchName'], 'v', '') }}
 
 # https://learn.microsoft.com/en-us/azure/devops/pipelines/process/run-number?view=azure-devops&tabs=yaml
-name: $(versionPrefix).$(Rev:r)0
+name: ${{ coalesce(variables.tagVersion, '$(versionPrefix).$(Rev:r)') }}
 
 jobs:
 - job: build
