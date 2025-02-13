@@ -6,11 +6,11 @@
   <Commands package="PACKAGE">
     <Buttons>
       <Button guid="PACKAGE" id="EXPAND_ALL_CMD">
-        <Icon guid="ImageCatalogGuid" id="ExpandAll" />
+        <Icon guid="ImageCatalogGuid" id="Expand" />
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>全部展开</ButtonText>
+          <ButtonText>展开所有项目</ButtonText>
           <CommandName>SolutionExplorer.ExpandAll</CommandName>
           <LocCanonicalName>.SolutionExplorer.ExpandAll</LocCanonicalName>
         </Strings>

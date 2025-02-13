@@ -15,7 +15,7 @@
 
   <CommandPlacements>
     <!--Put the menu in same group with 'Scope to This'-->
-    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD" priority="0xFFF0">
+    <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD" priority="0x0000">
       <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJWIN_SCOPE" />
     </CommandPlacement>
     <CommandPlacement guid="PACKAGE" id="EXPAND_ALL_CMD" priority="0x0000">

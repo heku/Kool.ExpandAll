@@ -6,7 +6,7 @@
     <Description xml:space="preserve">An open source Visual Studio extension to allow you expand selected hierarchy items in solution explorer.</Description>
     <MoreInfo>https://github.com/heku/kool.expandall</MoreInfo>
     <Icon>Resources\logo.png</Icon>
-    <Tags>kool;solution explorer;何苦;解决方案资源管理器;全部展开</Tags>
+    <Tags>kool;solution explorer;何苦;解决方案资源管理器;展开所有项目</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">

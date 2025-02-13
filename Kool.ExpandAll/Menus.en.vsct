@@ -6,11 +6,11 @@
   <Commands package="PACKAGE">
     <Buttons>
       <Button guid="PACKAGE" id="EXPAND_ALL_CMD">
-        <Icon guid="ImageCatalogGuid" id="ExpandAll" />
+        <Icon guid="ImageCatalogGuid" id="Expand" />
         <CommandFlag>IconAndText</CommandFlag>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <Strings>
-          <ButtonText>Expand All</ButtonText>
+          <ButtonText>Expand All Descendants</ButtonText>
           <CommandName>SolutionExplorer.ExpandAll</CommandName>
           <LocCanonicalName>.SolutionExplorer.ExpandAll</LocCanonicalName>
         </Strings>
